@@ -1,0 +1,9 @@
+.menu {
+  &__item:nth-child(n + 2) {
+    margin-top: 10px;
+  }
+  &__link {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}

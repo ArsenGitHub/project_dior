@@ -1,19 +1,15 @@
 .header {
+  min-height: 115px;
   &__wrapper {
-    min-height: 115px;
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
   }
   &__title {
-    font-family: 'Playfair Display', serif;
-    font-size: inherit;
-    font-weight: 400;
-    text-transform: uppercase;
     margin-left: auto;
   }
   &__menu {
     margin-left: 131px;
-    margin-right: 186px;
+    margin-right: 173px;
   }
 }

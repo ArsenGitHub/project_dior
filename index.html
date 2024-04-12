@@ -8,6 +8,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/scss/main.scss" />
+    <script defer src="./src/js/script.js"></script>
     <title>Dior</title>
   </head>
   <body>
@@ -64,40 +65,44 @@
       <div class="slider promo__slider">
         <div class="slider__item slider__item--size--l">
           <div class="container promo__container">
-            <div class="slider__inner">
+            <div class="promo__inner">
               <img
                 src="./src/img/promo_slider/perfume_small.jpg"
                 alt="perfume"
                 class="promo__small-img"
               />
-              <div class="slider__wrapper">
+              <div class="promo__wrapper">
                 <h1 class="title title--size--xl">GRIS DIOR</h1>
                 <h3 class="subtitle subtitle--size--l slider__subtitle">
                   Fragrance
                 </h3>
-                <p class="slider__text">
+                <p class="promo__text">
                   With Gris Dior you dare to reveal your most surprising,
                   mysterious and unexpected facets.
                 </p>
-                <a href="#" class="btn btn--size--s promo__btn">DISCOVER</a>
+                <a href="#" class="btn btn--size--s">DISCOVER</a>
               </div>
               <img
                 src="./src/img/promo_slider/woman.jpg"
                 alt="woman"
-                class="slider__big-img"
+                class="promo__big-img"
               />
             </div>
           </div>
         </div>
-        <!-- <div
+        <div
           class="slider__item slider__item--size--l"
           style="
             background: url('./src/img/promo_slider/perfume_big.jpg') center
               center / cover no-repeat;
           "
         >
-          <div class="container">
-            <a href="#" class="btn">YOUR NEW EXPERIENCE</a>
+          <div class="container promo__container">
+            <div class="promo__inner">
+              <a href="#" class="btn btn--size--l promo__btn"
+                >YOUR NEW EXPERIENCE</a
+              >
+            </div>
           </div>
         </div>
         <div
@@ -107,10 +112,28 @@
               cover no-repeat;
           "
         >
-          <div class="container">
-            <a href="#" class="btn">YOUR NEW EXPERIENCE</a>
+          <div class="container promo__container">
+            <div class="promo__inner">
+              <a href="#" class="btn btn--size--l promo__btn"
+                >YOUR NEW EXPERIENCE</a
+              >
+            </div>
           </div>
-        </div> -->
+        </div>
+        <div class="container promo__container">
+          <div class="slider__btns">
+            <img
+              class="slider__left"
+              src="./src/img/promo_slider/arrow_left.svg"
+              alt="arrow"
+            />
+            <img
+              class="slider__right"
+              src="./src/img/promo_slider/arrow_right.svg"
+              alt="arrow"
+            />
+          </div>
+        </div>
       </div>
     </section>
   </body>

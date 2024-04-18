@@ -1,0 +1,26 @@
+.description {
+  margin-top: 134px;
+  min-height: 1400px;
+  overflow: hidden;
+  &__title {
+    max-width: 184px;
+  }
+  &__wrapper {
+    padding-left: 203px;
+  }
+  &__inner {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__textbox {
+    flex-basis: 387px;
+  }
+  &__text {
+    margin-top: 20px;
+  }
+  &__slider {
+    margin-top: 150px;
+  }
+}

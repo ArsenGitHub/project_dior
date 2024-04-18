@@ -1,0 +1,21 @@
+.btn {
+  display: inline-block;
+  border: 1px solid #7449bb;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #7449bb;
+  transition: 0.3s all;
+  cursor: pointer;
+  &:hover {
+    background: #7449bb;
+    color: #fff;
+  }
+  &--size--s {
+    padding: 19px 53px;
+  }
+  &--size--l {
+    padding: 19px 33px;
+  }
+}

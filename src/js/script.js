@@ -1,7 +1,7 @@
-//Large Slider
-const sliderLarge = document.querySelector('.slider--size--l');
-const sliderLargeWrapper = document.querySelector('.slider__wrapper--size--l');
-const slidesLarge = document.querySelectorAll('.slider__item--size--l');
+//Promo Slider
+const promoSlider = document.querySelector('.promo__slider');
+const promoSliderWrapper = document.querySelector('.promo__wrapper');
+const promoSlides = document.querySelectorAll('.promo__item');
 
 let windowWidth, slideCounter, autoMoveSlide;
 
@@ -11,30 +11,30 @@ const moveSlides = function (slide, width, elem) {
 
 const sliderInit = function () {
   windowWidth = document.documentElement.clientWidth;
-  sliderLarge.style.width = `${windowWidth}px`;
-  sliderLargeWrapper.style.width = `${100 * slidesLarge.length}%`;
-  slidesLarge.forEach((el) => (el.style.flexBasis = `${windowWidth}px`));
+  promoSlider.style.width = `${windowWidth}px`;
+  promoSliderWrapper.style.width = `${100 * promoSlides.length}%`;
+  promoSlides.forEach((el) => (el.style.flexBasis = `${windowWidth}px`));
   slideCounter = 0;
-  moveSlides(slideCounter, windowWidth, sliderLargeWrapper);
+  moveSlides(slideCounter, windowWidth, promoSliderWrapper);
 
   autoMoveSlide = setInterval(function () {
     slideCounter +=
-      slideCounter >= slidesLarge.length - 1 ? -(slidesLarge.length - 1) : 1;
-    moveSlides(slideCounter, windowWidth, sliderLargeWrapper);
+      slideCounter >= promoSlides.length - 1 ? -(promoSlides.length - 1) : 1;
+    moveSlides(slideCounter, windowWidth, promoSliderWrapper);
   }, 3500);
 };
 
 sliderInit();
 
-sliderLarge.addEventListener('click', function (e) {
+promoSlider.addEventListener('click', function (e) {
   if (e.target.classList.contains('slider__right')) {
     slideCounter +=
-      slideCounter >= slidesLarge.length - 1 ? -(slidesLarge.length - 1) : 1;
+      slideCounter >= promoSlides.length - 1 ? -(promoSlides.length - 1) : 1;
   }
   if (e.target.classList.contains('slider__left')) {
-    slideCounter += slideCounter ? -1 : slidesLarge.length - 1;
+    slideCounter += slideCounter ? -1 : promoSlides.length - 1;
   }
-  moveSlides(slideCounter, windowWidth, sliderLargeWrapper);
+  moveSlides(slideCounter, windowWidth, promoSliderWrapper);
 });
 
 window.addEventListener('resize', function () {

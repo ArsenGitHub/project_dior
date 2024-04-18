@@ -4,4 +4,26 @@
   &__btn {
     margin-left: auto;
   }
+  &__item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  &__inner {
+    min-height: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content {
+    flex-basis: 183px;
+    margin-top: -186px;
+  }
+  &__text {
+    margin-top: 11px;
+    margin-bottom: 21px;
+  }
+  &__slider-btns {
+    transform: translateY(-50%);
+  }
 }
